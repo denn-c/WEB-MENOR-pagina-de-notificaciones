@@ -31,8 +31,8 @@ Los usuarios deben ser capaces de:
 
 ### Enlaces
 
-- URL de la solución: [--------------------------------------------------------](--------------------------------------------------)
-- URL del sitio en vivo: [----------------------------------------------](--------------------------------------------------)
+- URL de la solución: [https://github.com/denn-c/WEB-MENOR-pagina-de-notificaciones](https://github.com/denn-c/WEB-MENOR-pagina-de-notificaciones)
+- URL del sitio en vivo: [https://denn-c.github.io/WEB-MENOR-pagina-de-notificaciones/](https://denn-c.github.io/WEB-MENOR-pagina-de-notificaciones/)
 
 ## Mi proceso
 
