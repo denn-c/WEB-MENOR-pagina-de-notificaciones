@@ -1,0 +1,172 @@
+:root{
+  /* Primary */
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+/* Neutral */
+--White: hsl(0, 0%, 100%);
+--Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Light-grayish-blue-1: hsl(211, 68%, 94%);
+--Light-grayish-blue-2: hsl(205, 33%, 90%);
+--Grayish-blue: hsl(219, 14%, 63%);
+--Dark-grayish-blue: hsl(219, 12%, 42%);
+--Very-dark-blue: hsl(224, 21%, 14%);
+}
+@font-face {
+  font-family: "PlusJakartaSans Medium";
+  src: url(../asset/fonts/PlusJakartaSans-Medium.ttf);
+}
+@font-face {
+  font-family: "PlusJakartaSans ExtraBold";
+  src: url(../asset/fonts/PlusJakartaSans-ExtraBold.ttf);
+}
+*{
+  font-family: "PlusJakartaSans Medium";
+  font-size: 16px;
+}
+body{
+  min-height: 100vh;
+background-color: var(--Very-light-grayish-blue);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.main{
+  background-color: var(--White);
+  width: 36em;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  border-radius: 1em;
+  padding: 1.5em;
+  margin: 1em .2em;
+}
+.header,
+.header__left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title{
+  font-family: "PlusJakartaSans ExtraBold";
+  font-size: 1.3em;
+  margin: 0;
+  color: var(--Very-dark-blue);
+}
+.header{
+  flex-wrap: wrap;
+  gap: .5em;
+}
+
+.header__amount{
+  font-family: "PlusJakartaSans ExtraBold";
+  background-color: var(--Blue);
+  color: var(--White);
+  margin-left: .5em;
+  padding: .2em .6em;
+  border-radius: .3em;
+  font-size: .9em;
+}
+.header__button{
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  color: var(--Dark-grayish-blue);
+  font-size: .85em;
+  cursor: pointer;
+}
+.header__button:hover{
+  color: var(--Blue);
+}
+.notifications{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: .5em;
+  background-color: var(--Very-light-grayish-blue);
+  padding: .5em;
+  border-radius: .3em;
+}
+.notifications:nth-child(2){
+  margin-top: 1.5em;
+}
+.notifications:last-child{
+  margin-bottom: 0;
+}
+.notifications__photo{
+  width: 3em;
+  margin-right: .5em;
+}
+.notifications__message{
+  font-size: .85em;
+  margin: 0;
+  color: var(--Dark-grayish-blue);
+}
+.notifications__user{
+  color: var(--Very-dark-blue);
+  text-decoration: none;
+}
+.notifications__user:hover{
+  color: var(--Blue);
+}
+.notifications__name{
+  font-family: "PlusJakartaSans ExtraBold";
+  font-size: .85em;
+}
+.notifications__post{
+  font-family: "PlusJakartaSans ExtraBold";
+  text-decoration: none;
+  font-size: .95em;
+  color: var(--Dark-grayish-blue);
+}
+.notifications__post:hover{
+  color: var(--Blue);
+}
+.notifications__marker{
+  display: inline-block;
+  width: .5em;
+  height: .5em;
+  margin-left: .5em;
+  background-color: var(--Red);
+  border-radius: 100%;
+}
+.notifications__date{
+  margin: 0;
+}
+.notifications__time{
+  font-size: .85em;
+  font-style: normal;
+  color: var(--Dark-grayish-blue);
+}
+.notifications__private{
+  font-size: .85em;
+  padding: 1em;
+  color: var(--Dark-grayish-blue);
+  border-radius: .5em;
+  border: 1px solid var(--Light-grayish-blue-1);
+}
+.notifications__private:hover{
+  background-color: var(--Light-grayish-blue-1);
+}
+.notifications:nth-child(6) .notifications__text{
+  width: 100%;
+}
+.notifications:nth-child(6) .notifications__message{
+  position: relative;
+  padding-right: 4em;
+}
+.notifications__chess{
+  width: 3em;
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 0;
+}
+.read{
+  background-color: transparent;
+}
+
+.read .notifications__marker{
+  display: none;
+}
+@media (max-width : 420px) {
+  .main{
+    padding: 1.5em .8em;
+  }
+}

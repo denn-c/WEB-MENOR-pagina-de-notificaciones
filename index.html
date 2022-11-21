@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="asset/icon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Página de notificaciones</title>
+  </head>
+
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="header__left">
+          <h1 class="header__title">Notificaciones</h1>
+          <div class="header__amount">3</div>
+        </div>
+        <button class="header__button">marcar todo como leído</button>
+      </header>
+      <article class="notifications">
+        <img
+          src="asset/images/avatar-mark-webber.webp"
+          alt="Foto de perfil Mark"
+          class="notifications__photo"
+        />
+        <div class="notifications__text">
+          <p class="notifications__message">
+            <a href="#" class="notifications__user">
+              <strong class="notifications__name">Mark Webber</strong>
+            </a>
+            reaccionó a tu publicación reciente
+            <a href="#" class="notifications__post"> ¡Mi primer torneo hoy!</a>
+            <span class="notifications__marker"></span>
+          </p>
+          <p class="notifications__date"><em class="notifications__time">hace 1 mes</em></p>
+        </div>
+      </article>
+      <article class="notifications">
+        <img
+          src="asset/images/avatar-angela-gray.webp"
+          alt="Foto de perfil Angela"
+          class="notifications__photo"
+        />
+        <div class="notifications__text">
+          <p class="notifications__message">
+            <a href="#" class="notifications__user">
+              <strong class="notifications__name">Angela Gray</strong>
+            </a>
+            te siguió
+            <span class="notifications__marker"></span>
+          </p>
+          <p class="notifications__date"><em class="notifications__time">Hace 5 minutos</em></p>
+        </div>
+      </article>
+      <article class="notifications">
+        <img
+          src="asset/images/avatar-jacob-thompson.webp"
+          alt="Foto de perfil Jacob"
+          class="notifications__photo"
+        />
+        <div class="notifications__text">
+          <p class="notifications__message">
+            <a href="#" class="notifications__user">
+              <strong class="notifications__name">Jacob Thompson</strong>
+            </a>
+            se ha unido a su grupo
+            <a href="#" class="notifications__post"> Club de Ajedrez</a>
+            <span class="notifications__marker"></span>
+          </p>
+          <p class="notifications__date"><em class="notifications__time">Hace 1 día</em></p>
+        </div>
+      </article>
+      <article class="notifications read">
+        <img
+          src="asset/images/avatar-rizky-hasanuddin.webp"
+          alt="Foto de perfil Mark"
+          class="notifications__photo"
+        />
+        <div class="notifications__text">
+          <p class="notifications__message">
+            <a href="#" class="notifications__user">
+              <strong class="notifications__name">Rizke Hasanuddin</strong>
+            </a>
+            te envió un mensaje privado
+            <span class="notifications__marker"></span>
+          </p>
+          <p class="notifications__date"><em class="notifications__time">hace 5 días</em></p>
+          <p class="notifications__private">
+            Hola, gracias por crear el Club de Ajedrez. Soy miembro desde hace
+            unas semanas y me estoy divirtiendo mucho y mejorando mi juego.
+          </p>
+        </div>
+      </article>
+      <article class="notifications read">
+        <img
+          src="asset/images/avatar-kimberly-smith.webp"
+          alt="Foto de perfil Kimberly"
+          class="notifications__photo"
+        />
+        <div class="notifications__text">
+          <p class="notifications__message">
+            <a href="#" class="notifications__user">
+              <strong class="notifications__name">Kimberly Smith</strong>
+            </a>
+            comentó tu foto
+            <span class="notifications__marker"></span>
+            <a href="#"><img src="asset/images/image-chess.webp" alt="Imagen de ajedrez" class="notifications__chess"></a>
+          </p>
+          <p class="notifications__date"><em class="notifications__time">Hace 1 semana</em></p>
+        </div>
+      </article>
+      <article class="notifications read">
+        <img
+          src="asset/images/avatar-nathan-peterson.webp"
+          alt="Foto de perfil Nathan"
+          class="notifications__photo"
+        />
+        <div class="notifications__text">
+          <p class="notifications__message">
+            <a href="#" class="notifications__user">
+              <strong class="notifications__name">Nathan Peterson</strong>
+            </a>
+            reaccionó a su reciente publicación de
+            <a href="#" class="notifications__post">5 estrategias para el final del juego para aumentar su tasa de ganancias</a>
+            <span class="notifications__marker"></span>
+          </p>
+          <p class="notifications__date"><em class="notifications__time">hace 2 semanas</em></p>
+        </div>
+      </article>
+      <article class="notifications read">
+        <img
+          src="asset/images/avatar-anna-kim.webp"
+          alt="Foto de perfil Anna"
+          class="notifications__photo"
+        />
+        <div class="notifications__text">
+          <p class="notifications__message">
+            <a href="#" class="notifications__user">
+              <strong class="notifications__name">Anna Kin</strong>
+            </a>
+            dejó el grupo
+            <a href="#" class="notifications__post"> Club de Ajedrez</a>
+            <span class="notifications__marker"></span>
+          </p>
+          <p class="notifications__date"><em class="notifications__time">hace 2 semanas</em></p>
+        </div>
+      </article>
+    </main>
+    <script src="js/notifications.js"></script>
+  </body>
+</html>
